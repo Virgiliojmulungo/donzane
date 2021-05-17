@@ -140,7 +140,7 @@ Vue.component("register", {
             this.$bus.$on('change_register', val => this.page = val);
             this.$bus.$on('change_list', val1 => this.page = val1);
             history.pushState("Lista de estudante","?pagina=1");
-            axios.post("http://desktop-lgoe29v:8080/donzane/runService/list")
+            axios.post("https://desktop-lgoe29v:8080/donzane/runService/list")
               .then(response=>{
                         this.response_all = JSON.parse(JSON.stringify(response.data));
                         this.total_page = this.response_all.total;
@@ -175,7 +175,7 @@ Vue.component("register", {
             paginar:function(param){
                  this.pageNum = param;
                  history.pushState({pagina:this.pageNum},"Lista de estudante","?pagina="+this.pageNum);
-                axios.post("http://desktop-lgoe29v:8080/donzane/runService/list",{
+                axios.post("https://desktop-lgoe29v:8080/donzane/runService/list",{
                     "pagina":this.pageNum
                 })
                 .then(response=>{
@@ -188,7 +188,7 @@ Vue.component("register", {
             },
             delete_student:function (id) {
                 $('#delete').modal("hide");
-               axios.post("http://desktop-lgoe29v:8080/donzane/runService/delete",{
+               axios.post("https://desktop-lgoe29v:8080/donzane/runService/delete",{
                      "id_delete":id
                 })
                 .then(response=>{
