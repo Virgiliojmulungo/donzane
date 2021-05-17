@@ -92,28 +92,15 @@
 
   <build>
     <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-dependency-plugin</artifactId>
-        <version>2.10</version>
-        <configuration>
-          <artifactItems>
-            <artifactItem>
-              <groupId>[ groupId ]</groupId>
-              <artifactId>[ artifactId ]</artifactId>
-              <version>[ version ]</version>
-              <type>[ packaging ]</type>
-              <classifier> [classifier - optional] </classifier>
-              <overWrite>[ true or false ]</overWrite>
-              <outputDirectory>[ output directory ]</outputDirectory>
-              <destFileName>[ filename ]</destFileName>
-              <includes>[ comma separated list of file filters ]</includes>
-              <excludes>[ comma separated list of file filters ]</excludes>
-            </artifactItem>
-          </artifactItems>
-          <!-- other configurations here -->
-        </configuration>
-      </plugin>
+            <plugin> 
+                <groupId>org.apache.maven.plugins</groupId> 
+                <artifactId>maven-compiler-plugin</artifactId> 
+                <version>3.5.1</version> 
+               <configuration>
+                    <source>1.8</source> 
+                    <target>1.8</target> 
+                </configuration> 
+            </plugin>
     </plugins>
   </build>
 

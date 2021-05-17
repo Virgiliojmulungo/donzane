@@ -28,7 +28,7 @@ public class Dao {
           }
            
           try {
-              conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/escola?useTimeZone=true&serverTimezone=UTC&autoReconnect=true&useSSL=false","root","tryitn0w");
+              conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/escola","root","tryitn0w");
           } catch (SQLException ex) {
                 log.info("problems with drive manager", ex);
                 throw new DatabaseDriverManagerError(ex,"problems with Drivemanager please review that");
