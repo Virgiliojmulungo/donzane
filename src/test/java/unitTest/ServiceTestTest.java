@@ -1,9 +1,7 @@
 
 package unitTest;
 
-import dao.ClassNameNotFound;
 import java.sql.SQLException;
-import main.RunService;
 import org.junit.Test;
 import service.Service;
 

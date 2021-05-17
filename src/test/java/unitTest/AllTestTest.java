@@ -3,25 +3,16 @@ package unitTest;
 
 import dao.ClassNameNotFound;
 import org.junit.Test;
-import static org.junit.Assert.*;
-import dao.Dao;
-import static dao.Dao.dbConnect;
 import dao.DaoClient;
 import dao.DatabaseDriverManagerError;
-import static dao.DaoClient.login;
-import static dao.DaoClient.insert;
 import dao.ErrorInserEstudanteDatabase;
 import dao.EstudanteFetchProblemsError;
 import dao.FetchFuncionarioError;
 import dao.LoginQueryError;
 import dao.NoFuncionarioFetch;
 import java.util.ArrayList;
-import org.junit.Assert;
-import org.junit.Ignore;
 import pojo.Estudante;
-import static dao.DaoClient.numeroEstudante;
 import java.sql.SQLException;
-import javax.swing.JOptionPane;
 
 
 
