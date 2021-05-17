@@ -15,12 +15,6 @@
     </properties>
     
     <dependencies>
-       <!-- <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.12</version>
-            <scope>test</scope>
-        </dependency>-->
         <dependency>
             <groupId>org.hamcrest</groupId>
             <artifactId>hamcrest-core</artifactId>
@@ -88,13 +82,7 @@
             <artifactId>commons-io</artifactId>
             <version>2.6</version>
         </dependency> 
-        
-        <dependency>
-            <groupId>org.openjfx</groupId>
-            <artifactId>javafx</artifactId>
-            <version>11</version>
-            <type>pom</type>
-        </dependency>        
+             
     </dependencies>
 
   <build>
